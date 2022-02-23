@@ -1,0 +1,399 @@
+{
+	"data": [
+		{
+			"index": 0,
+			"id": 1000,
+			"code": "f230fh0g3",
+			"name": "EPA",
+			"description": "Product Description",
+			"image": "bamboo-watch.jpg",
+			"price": 65,
+			"category": [
+				"GHD comments"
+			],
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "GHD comments",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				}
+			]
+		},
+		{
+			"index": 1,
+			"id": 1001,
+			"code": "nvklal433",
+			"name": "BFS",
+			"description": "Product Description",
+			"image": "black-watch.jpg",
+			"price": 72,
+			"category": [
+				"CAPEX",
+				"OPEX",
+				"IRR / NPV"
+			],
+			"quantity": 61,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "CAPEX",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "OPEX",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "IRR / NPV",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				}
+
+			]
+		},
+		{
+			"index": 2,
+			"id": 1002,
+			"code": "zz21cz3c1",
+			"name": "GERALDTON",
+			"description": "Product Description",
+			"image": "blue-band.jpg",
+			"price": 79,
+			"category": [
+				"Port Development Guideline",
+				"Terms and conditions",
+				"Request for Early work"
+			],
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Port Development Guideline",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Terms and conditions",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Request for Early work",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				}
+
+			]
+		},
+		{
+			"index": 3,
+			"id": 1003,
+			"code": "244wgerg2",
+			"name": "ORGANIZATION",
+			"description": "Product Description",
+			"image": "blue-t-shirt.jpg",
+			"price": 29,
+			"category": [
+				"Organisational Structure",
+				"Organisational Chart",
+				"HR"
+			],
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Organisational Structure",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Organisational Chart",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "HR",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				}
+
+			]
+		},
+		{
+			"index": 4,
+			"id": 1004,
+			"code": "h456wer53",
+			"name": "FINANCE",
+			"description": "Product Description",
+			"image": "bracelet.jpg",
+			"price": 15,
+			"category": [
+				"Negotiate with off-takers"
+			],
+			"quantity": 73,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Negotiate with off-takers",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				}
+			]
+		},
+		{
+			"index": 5,
+			"id": 1005,
+			"code": "av2231fwg",
+			"name": "POWER PLANT",
+			"description": "Product Description",
+			"image": "brown-purse.jpg",
+			"price": 120,
+			"category": [
+				"Tender",
+				"Prepare ‘Feasibility Study’ for...",
+				"Hire new project coordinator"
+			],
+			"quantity": 0,
+			"inventoryStatus": "OUTOFSTOCK",
+			"rating": 4,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Tender",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Prepare ‘Feasibility Study’ for...",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Hire new project coordinator",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				}
+
+			]
+		},
+		{
+			"index": 6,
+			"id": 1006,
+			"code": "bib36pfvm",
+			"name": "MINING",
+			"description": "Product Description",
+			"image": "chakra-bracelet.jpg",
+			"price": 32,
+			"category": [
+				"Mining proposal"
+			],
+			"quantity": 5,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Mining proposal",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				}
+			]
+		},
+		{
+			"index": 7,
+			"id": 1007,
+			"code": "mbvjkgip5",
+			"name": "PIPE LINE",
+			"description": "Product Description",
+			"image": "galaxy-earrings.jpg",
+			"price": 34,
+			"category": [
+				"Accessories",
+				"sffdsf"
+			],
+			"quantity": 23,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Accessories",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Contractor Negotiation",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				}
+
+			]
+		},
+		{
+			"index": 8,
+			"id": 1008,
+			"code": "vbb124btr",
+			"name": "EARLY WORK",
+			"description": "Product Description",
+			"image": "game-controller.jpg",
+			"price": 99,
+			"category": [
+				"Request from EPA for Early w…"
+			],
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 4,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Request from EPA for Early w…",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				},
+				{
+					"id": "1002",
+					"code": "1003",
+					"shiftName": "Permit Accuisition ",
+					"ShiftWeight": "1232",
+					"description": "description test",
+					"progress": 70
+				}
+
+			]
+		},
+		{
+			"index": 9,
+			"id": 1009,
+			"code": "cm230f032",
+			"name": "CAMP",
+			"description": "Product Description",
+			"image": "gaming-set.jpg",
+			"price": 299,
+			"category": [
+				"Tender"
+			],
+			"quantity": 63,
+			"inventoryStatus": "INSTOCK",
+			"rating": 3,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Tender",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				}
+			]
+		},
+		{
+			"index": 10,
+			"id": 1010,
+			"code": "cm230f032",
+			"name": "CAMP2",
+			"description": "Product Description",
+			"image": "gaming-set.jpg",
+			"price": 299,
+			"category": [
+				"Tender2"
+			],
+			"quantity": 63,
+			"inventoryStatus": "INSTOCK",
+			"rating": 3,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Tender2",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				}
+			]
+		},
+		{
+			"index": 11,
+			"id": 1011,
+			"code": "cm230f032",
+			"name": "CAMP3",
+			"description": "Product Description",
+			"image": "gaming-set.jpg",
+			"price": 299,
+			"category": [
+				"Tender3"
+			],
+			"quantity": 63,
+			"inventoryStatus": "INSTOCK",
+			"rating": 3,
+			"shifts": [
+				{
+					"id": "1000",
+					"code": "1000",
+					"shiftName": "Tender3",
+					"ShiftWeight": "256",
+					"description": "description test",
+					"progress": 26
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+<div class="p-grid p-fluid" style="margin-top: 15px;">
+    <div class="p-col-12 ">
+        <label for="code">Code</label>
+        <input Id="code" class="p-col-12" type="text" pInputText>
+    </div>
+    <div class="p-col-12 ">
+        <label for="ShiftName">Shift Name</label>
+        <input Id="ShiftName" type="text" pInputText>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <label for="ShiftWeight">Shift Weight</label>
+        <input Id="ShiftWeight" type="text" pInputText>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <label for="description">Description</label>
+        <textarea rows="5" Id="description" pInputTextarea></textarea>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <label for="progress">Progress: {{val1}}</label>
+        <div style="margin: 15px 0px;">
+            <p-slider Id="progress" [(ngModel)]="val1"></p-slider>
+        </div>
+    </div>
+
+</div>
+<div style="margin-top: 40px;">
+    <p-button label="Save"  class="mr-2" styleClass="p-button-success"></p-button>
+    <p-button label="Close" class="mr-2" ></p-button>    
+</div>

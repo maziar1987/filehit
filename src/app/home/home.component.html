@@ -1,0 +1,39 @@
+<div style="display: flex;justify-content: center;">
+
+    <div style="width: 1500px;">
+        <div style="width: 1430px;margin-left: 69px;">
+            <p-toolbar>
+                <div class="p-toolbar-group-left">
+                    <p-button label="New" icon="pi pi-plus" class="mr-2"></p-button>
+                    <p-button label="Edit" (click)="Edit()" icon="pi pi-pencil" class="mr-2" styleClass="p-button-success"></p-button>
+                    <p-button label="Delete" icon="pi pi-trash" styleClass="p-button-danger"></p-button>
+                </div>
+            </p-toolbar>
+        </div>
+        <p-orderList (onSelectionChange)="onSelectionChange($event)" (onReorder)="onReorder($event)" [value]="products"
+            [listStyle]="{'height':'auto'}" header="YOGI MINE PROJECT" filterBy="name"
+            filterPlaceholder="Filter by name" [dragdrop]="true">
+            <ng-template let-product pTemplate="item">
+                <div [class]="'product-item status-' + product.class">
+                    <div class="product-list-detail">
+                        <h1 class="p-mb-2">{{product.name}}</h1>
+                        <!-- <i class="pi pi-tag product-category-icon"></i> -->
+                        <!-- <span class="product-category">{{product.category}}</span> -->
+                    </div>
+                    <div class="project-rank">{{product.indexShow }}</div>
+                    <div class="product-list-action">
+                        <!-- <h6 class="p-mb-2">{{product.index + 1 }}</h6> -->
+                        <ul>
+                            <li *ngFor="let shift of product.shifts">
+                                <span>{{shift.shiftName}}</span>
+                                
+                            </li>
+                        </ul>
+
+                        <!-- <span [class]="'product-badge status-' + product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span> -->
+                    </div>
+                </div>
+            </ng-template>
+        </p-orderList>
+    </div>
+</div>

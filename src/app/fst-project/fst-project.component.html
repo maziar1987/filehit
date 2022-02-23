@@ -1,0 +1,58 @@
+<div style="display: flex;justify-content: center;">
+    <div [class]="'status-' + product?.class" style="width: 1200px; padding: 20px; position: relative;border-radius: 10px;" >
+        <h1>{{product?.name}}</h1>
+        <div class="project-rank">{{product?.indexShow}}</div>
+        <p-table #dt [value]="product.shifts" [globalFilterFields]="['name','quantity']">
+            <ng-template pTemplate="caption">
+
+                <p-button label="New" icon="pi pi-plus" class="mr-2" (click)="New()"></p-button>
+                <div class="table-header">
+                    List of Shifts
+
+                </div>
+                <div class="p-d-flex">
+                    <span class="p-input-icon-left p-ml-auto">
+                        <i class="pi pi-search"></i>
+                        <input pInputText type="text" (input)="dt.filterGlobal($any($event.target).value, 'contains')"
+                            placeholder="Search keyword" />
+                    </span>
+                </div>
+
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>#</th>
+                    <th>Code</th>
+                    <th>Shift Name</th>
+                    <th>Shift weight</th>
+                    <!-- <th>progress</th> -->
+                    <th>progress</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <!-- <td>
+                        <p-menu #menu [popup]="true" [model]="getMenuItems(rowData)" appendTo="body">
+                        </p-menu>
+                        <button pButton icon="pi pi-bars" type="button" (click)="menu.toggle($event)"
+                            class="ui-button-secondary"></button>
+                    </td> -->
+                    <td>
+                        <p-menu #menu [popup]="true" [model]="getMenuItems(product)" appendTo="body">
+                        </p-menu>
+                        <span class="pi pi-bars"(click)="menu.toggle($event)"></span>
+                    </td>
+                    <td>{{product.id}}</td>
+                    <td>{{product.shiftName}}</td>
+                    <td>{{product.ShiftWeight}}</td>
+                    <!-- <td>{{product.quantity}}</td> -->
+                    <td  pInputText pTooltip="{{product.progress}}" tooltipPosition="top">
+                        <p-progressBar [value]="product.progress" [showValue]="false"></p-progressBar>
+                    </td>
+
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+
+</div>

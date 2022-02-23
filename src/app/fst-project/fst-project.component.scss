@@ -1,0 +1,87 @@
+.project-rank {
+    position: absolute; 
+    right: 1px;
+    top: 0;
+    background-color: #705ad4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.status-1 {
+    background: #C8E6C9;
+    
+}
+.status-2 {
+    background: #e1b82152;
+    
+}
+.status-3 {
+    background: #160b0e4a;
+    
+}
+.status-4 {
+    background: #c440634a;
+    
+}
+:host ::ng-deep {
+    .p-paginator {
+        .p-paginator-current {
+            margin-left: auto;
+        }
+    }
+    .p-datatable .p-datatable-header { 
+        display: flex;       
+        justify-content: space-between;
+    }
+    .p-progressbar {
+        height: .5rem;
+        background-color: #D8DADC;
+    
+        .p-progressbar-value {
+            background-color: #607D8B;
+        }
+    }
+    
+    .table-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .p-calendar .p-datepicker {
+        min-width: 25rem;
+    
+        td {
+            font-weight: 400;
+        }
+    }
+    
+    .p-datatable.p-datatable-customers {
+        .p-datatable-header {
+            padding: 1rem;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    
+        .p-paginator {
+            padding: 1rem;
+        }
+    
+        .p-datatable-thead > tr > th {
+            text-align: left;
+        }
+    
+        .p-datatable-tbody > tr > td {
+            cursor: auto;
+        }
+    
+        .p-dropdown-label:not(.p-placeholder) {
+            text-transform: uppercase;
+        }
+    }
+    
+    /* Responsive */
+    .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
+        display: none;
+    }
+}

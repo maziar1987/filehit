@@ -1,21 +1,30 @@
-import { Component, HostListener } from '@angular/core';
+
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { SelectItem } from 'primeng/api';
 import { SelectItemGroup } from 'primeng/api';
-import { ProductService } from './productservice';
-import { Product } from './product';
+import { ProductService } from '../productservice';
+import { Product } from '../product';
 import { PrimeNGConfig } from 'primeng/api';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
+export class HomeComponent implements OnInit {
   products: Product[] = [];
   product!: Product;
-  constructor(private productService: ProductService, private primengConfig: PrimeNGConfig, private breakpointObserver: BreakpointObserver) { }
+  constructor(
+    private productService: ProductService,
+    private primengConfig: PrimeNGConfig,
+    private breakpointObserver: BreakpointObserver,
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+  ) { }
   // @HostListener('window:resize', ['$event'])
   // onResize(event:any) {
   //   event.target.innerWidth;
@@ -60,4 +69,14 @@ export class AppComponent {
     //debugger;  
     console.log(this.product.name);
   }
+  Edit() {
+    console.log(this.product);
+    // this.router.navigate(['project' + this.product.id, {
+    //   indexShow: this.product.indexShow      
+    // }]);
+    // this.router.navigate(['project' ]);
+    this.router.navigate(['/project'], { queryParams: { id: this.product.id, index: this.product.index } });
+
+  }
+
 }
